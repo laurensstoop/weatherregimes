@@ -17,3 +17,4 @@ for Y in $(seq 1979 2020);do
 done
 
 
+# Possibly add -shifttime,-1sec  to get correct timestep
