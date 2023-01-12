@@ -12,7 +12,7 @@ import numpy as np
 
 external_drive='/Volumes/ExtremePro2/ERA5/Geopotential/'
 
-
+#%%
 c = cdsapi.Client()
 
 for Y in np.arange(1979, 2017):
@@ -20,7 +20,7 @@ for Y in np.arange(1979, 2017):
         'reanalysis-era5-pressure-levels',
         {
             'product_type': 'reanalysis',
-            'format': 'netcdf',
+            'format': 'grib',
             'variable': 'geopotential',
             'pressure_level': '500',
             'month': [
@@ -55,4 +55,4 @@ for Y in np.arange(1979, 2017):
                 80, -90, 20, 30,
             ],
         },
-        external_drive+'ERA5-Atlantic_Gph_'+str(Y)+'.nc')
+        external_drive+'ERA5-Atlantic_Gph_'+str(Y)+'.grib')
