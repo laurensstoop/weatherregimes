@@ -1,5 +1,8 @@
 # WeatherRegimes
 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7782226.svg)](https://doi.org/10.5281/zenodo.7782226)
+
 Version 0.1.0
 
 Determining  weather regimes in datasets for energy climate modelling. 
